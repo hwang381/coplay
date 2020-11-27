@@ -20,9 +20,6 @@
    * Check if coplay is already started or not supported
    */
   let id = 'coplay';
-  if (get(id)) {
-    return;
-  }
 
   // Supported websites: Youku, SohuTV, Tudou, TencentVideo, iQiyi, YouTube, ACFun, bilibili, MGTV, Vimeo
   let host = location.host.match(
@@ -145,10 +142,10 @@
   }
 
   /**
-   * Player adaptor layer
+   * Player adapter layer
    */
-  let playerAdaptor = {};
-  playerAdaptor.youku = {
+  let playerAdapters = {};
+  playerAdapters.youku = {
     prepare() {
       this._player = window.videoPlayer;
     },
@@ -175,7 +172,7 @@
       }
     }
   };
-  playerAdaptor.tudou = {
+  playerAdapters.tudou = {
     prepare() {
       this._player = query('video[data-canplay="play"]');
     },
@@ -201,7 +198,7 @@
       ).click();
     }
   };
-  playerAdaptor.qq = {
+  playerAdapters.qq = {
     prepare() {
       this._player = window.PLAYER;
     },
@@ -228,7 +225,7 @@
       }
     }
   };
-  playerAdaptor.iqiyi = {
+  playerAdapters.iqiyi = {
     prepare() {
       this._player = query('.iqp-player video');
     },
@@ -251,7 +248,7 @@
       query('.iqp-btn-fullscreen').click();
     }
   };
-  playerAdaptor.sohu = {
+  playerAdapters.sohu = {
     prepare() {
       this._player = window._player;
     },
@@ -278,7 +275,7 @@
       }
     }
   };
-  playerAdaptor.youtube = {
+  playerAdapters.youtube = {
     prepare() {
       let player = get('movie_player');
       if (visible(player)) {
@@ -304,7 +301,7 @@
       this._player.toggleFullscreen();
     }
   };
-  playerAdaptor.acfun = {
+  playerAdapters.acfun = {
     prepare() {
       this._player = window.player;
     },
@@ -327,7 +324,7 @@
       query('.fullscreen-screen').click();
     }
   };
-  playerAdaptor.bilibili = {
+  playerAdapters.bilibili = {
     prepare() {
       if (window.player) {
         Object.defineProperty(this, '_player', {
@@ -356,7 +353,7 @@
       query('.bilibili-player-video-btn-fullscreen').click();
     }
   };
-  playerAdaptor.vimeo = {
+  playerAdapters.vimeo = {
     prepare() {
       let component = findReactComponent(query('[data-player="true"]'));
       if (!component) {
@@ -395,7 +392,7 @@
       query('.fullscreen').click();
     }
   };
-  playerAdaptor.mgtv = {
+  playerAdapters.mgtv = {
     prepare() {
       this._player = MGTVPlayer.getPlayer();
     },
@@ -423,7 +420,7 @@
     }
   };
 
-  let playerBase = {
+  let basePlayer = {
     trigger(type, ...args) {
       if (typeof this['on' + type] === 'function') {
         this['on' + type](...args);
@@ -452,7 +449,7 @@
   };
 
   function initPlayer(done) {
-    let player = Object.assign({}, playerBase, playerAdaptor[host]);
+    let player = Object.assign({}, basePlayer, playerAdapters[host]);
 
     (function init() {
       player.init();
@@ -678,7 +675,6 @@
     }
 
     let peerOptions = {
-      key: 'kl2e8piw363qsemi',
       config: {
         // free servers from https://gist.github.com/yetithefoot/7592580
         iceServers: [
@@ -718,7 +714,8 @@
             username: '28224511:1379330808'
           }
         ]
-      }
+      },
+      debug: 3
     };
 
     console.log(coplayOptions);
@@ -736,12 +733,6 @@
       if (coplayOptions.key) {
         peerOptions.key = coplayOptions.key;
       }
-    } else {
-      peerOptions.host = 'coplay-server.herokuapp.com';
-      peerOptions.path = '';
-      peerOptions.port = 443;
-      peerOptions.secure = true;
-      peerOptions.key = 'peerjs';
     }
 
     let peer = new Peer(peerOptions);
@@ -872,13 +863,10 @@
   }
 
   coplay.init = function() {
-    let main = get(id);
-    if (!main) {
-      initPlayer(function() {
-        initUI();
-        initPeer();
-      });
-    }
+    initPlayer(function() {
+      initUI();
+      initPeer();
+    });
   };
 
   coplay.setDisabled = function(isDisabled) {
@@ -992,5 +980,7 @@
    * Get options and start
    */
   let coplayOptions = JSON.parse(document.body.dataset['coplayOptions']);
-  coplay.init();
+  if (coplayOptions.autoActivate) {
+    coplay.init();
+  }
 })();

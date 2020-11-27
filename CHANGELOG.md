@@ -1,3 +1,6 @@
+0.6.1
+* Use up-to-date peer.js library and the official peer.js server
+
 0.6.0
 * Enables default HTTPS server by default.
 * Updated vendor support.
@@ -71,5 +74,4 @@
 * Added Bilibili support. (thx [@yqf3139](https://github.com/yqf3139))
 
 0.0.1
-
 * First release.
