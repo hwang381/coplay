@@ -12,12 +12,17 @@ This is a forked version of the [original by @Justineo](https://github.com/Justi
 
 * Use up-to-date peer.js library and the official peer.js server so that the initial connection is more reliable
 
-## Installation
+## Install
 
 [![Chrome Extension](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/tbyBjqi7Zu733AAKA5n4.png)](https://chrome.google.com/webstore/detail/coplay-forked/bfepakbebcfknkdehfflhhbigbaokfkl)
+
 [![Firefox Add-on](./images/get-the-firefox-addon.png)](https://addons.mozilla.org/en-US/firefox/addon/coplay-forked/)
 
-## Usage
+[![Safari extension](./images/download-on-the-mac-app-store.svg)](https://apps.apple.com/us/app/coplay-forked/id1552525660)
+
+If you don't want to install it from a store, download from [releases](https://github.com/hwang381/coplay/releases) for either the Chrome/Firefox or the Safari (notarized) versions
+
+## Use
 
 1. The two users visit the same video page on one of the supported video sites
    
