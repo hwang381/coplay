@@ -38,7 +38,7 @@ gulp.task(
   'cp',
   gulp.series('res', function() {
     return gulp
-      .src(['./src/*', '!./src/coplay.js', '!./src/chrome'])
+      .src(['./src/*', '!./src/coplay.js', '!./src/chrome', '!./src/safari'])
       .pipe(gulp.dest('./extensions/chrome'))
   })
 );
