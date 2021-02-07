@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		775FEDD925CF683A005E7753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775FEDD825CF683A005E7753 /* AppDelegate.swift */; };
+		775FEDDC25CF683A005E7753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 775FEDDA25CF683A005E7753 /* Main.storyboard */; };
+		775FEDDE25CF683A005E7753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775FEDDD25CF683A005E7753 /* ViewController.swift */; };
+		775FEDE025CF683B005E7753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775FEDDF25CF683B005E7753 /* Assets.xcassets */; };
+		775FEDE725CF683B005E7753 /* Coplay-forked Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 775FEDE625CF683B005E7753 /* Coplay-forked Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		775FEDEC25CF683B005E7753 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775FEDEB25CF683B005E7753 /* Cocoa.framework */; };
+		775FEDEF25CF683B005E7753 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775FEDEE25CF683B005E7753 /* SafariWebExtensionHandler.swift */; };
+		775FEE0525CF683B005E7753 /* drag.js in Resources */ = {isa = PBXBuildFile; fileRef = 775FEDFC25CF683B005E7753 /* drag.js */; };
+		775FEE0625CF683B005E7753 /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = 775FEDFD25CF683B005E7753 /* options.js */; };
+		775FEE0725CF683B005E7753 /* coplay.js in Resources */ = {isa = PBXBuildFile; fileRef = 775FEDFE25CF683B005E7753 /* coplay.js */; };
+		775FEE0825CF683B005E7753 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 775FEDFF25CF683B005E7753 /* manifest.json */; };
+		775FEE0925CF683B005E7753 /* coplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 775FEE0025CF683B005E7753 /* coplay.png */; };
+		775FEE0A25CF683B005E7753 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 775FEE0125CF683B005E7753 /* options.html */; };
+		775FEE0B25CF683B005E7753 /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 775FEE0225CF683B005E7753 /* inject.js */; };
+		775FEE0C25CF683B005E7753 /* peer.js in Resources */ = {isa = PBXBuildFile; fileRef = 775FEE0325CF683B005E7753 /* peer.js */; };
+		775FEE0D25CF683B005E7753 /* coplay.css in Resources */ = {isa = PBXBuildFile; fileRef = 775FEE0425CF683B005E7753 /* coplay.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		775FEDE825CF683B005E7753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 775FEDCC25CF683A005E7753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 775FEDE525CF683B005E7753;
+			remoteInfo = "Coplay-forked Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		775FEDF725CF683B005E7753 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				775FEDE725CF683B005E7753 /* Coplay-forked Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		775FEDD425CF683A005E7753 /* Coplay-forked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coplay-forked.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		775FEDD725CF683A005E7753 /* Coplay_forked.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Coplay_forked.entitlements; sourceTree = "<group>"; };
+		775FEDD825CF683A005E7753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		775FEDDB25CF683A005E7753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		775FEDDD25CF683A005E7753 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		775FEDDF25CF683B005E7753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		775FEDE125CF683B005E7753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775FEDE625CF683B005E7753 /* Coplay-forked Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Coplay-forked Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		775FEDEB25CF683B005E7753 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		775FEDEE25CF683B005E7753 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		775FEDF025CF683B005E7753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775FEDF125CF683B005E7753 /* Coplay_forked_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Coplay_forked_Extension.entitlements; sourceTree = "<group>"; };
+		775FEDFC25CF683B005E7753 /* drag.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = drag.js; path = Resources/drag.js; sourceTree = "<group>"; };
+		775FEDFD25CF683B005E7753 /* options.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.js; path = Resources/options.js; sourceTree = "<group>"; };
+		775FEDFE25CF683B005E7753 /* coplay.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = coplay.js; path = Resources/coplay.js; sourceTree = "<group>"; };
+		775FEDFF25CF683B005E7753 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		775FEE0025CF683B005E7753 /* coplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coplay.png; path = Resources/coplay.png; sourceTree = "<group>"; };
+		775FEE0125CF683B005E7753 /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = Resources/options.html; sourceTree = "<group>"; };
+		775FEE0225CF683B005E7753 /* inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = inject.js; path = Resources/inject.js; sourceTree = "<group>"; };
+		775FEE0325CF683B005E7753 /* peer.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = peer.js; path = Resources/peer.js; sourceTree = "<group>"; };
+		775FEE0425CF683B005E7753 /* coplay.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = coplay.css; path = Resources/coplay.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		775FEDD125CF683A005E7753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775FEDE325CF683B005E7753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775FEDEC25CF683B005E7753 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		775FEDCB25CF683A005E7753 = {
+			isa = PBXGroup;
+			children = (
+				775FEDD625CF683A005E7753 /* Coplay-forked */,
+				775FEDED25CF683B005E7753 /* Coplay-forked Extension */,
+				775FEDEA25CF683B005E7753 /* Frameworks */,
+				775FEDD525CF683A005E7753 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		775FEDD525CF683A005E7753 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				775FEDD425CF683A005E7753 /* Coplay-forked.app */,
+				775FEDE625CF683B005E7753 /* Coplay-forked Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		775FEDD625CF683A005E7753 /* Coplay-forked */ = {
+			isa = PBXGroup;
+			children = (
+				775FEDD725CF683A005E7753 /* Coplay_forked.entitlements */,
+				775FEDD825CF683A005E7753 /* AppDelegate.swift */,
+				775FEDDA25CF683A005E7753 /* Main.storyboard */,
+				775FEDDD25CF683A005E7753 /* ViewController.swift */,
+				775FEDDF25CF683B005E7753 /* Assets.xcassets */,
+				775FEDE125CF683B005E7753 /* Info.plist */,
+			);
+			path = "Coplay-forked";
+			sourceTree = "<group>";
+		};
+		775FEDEA25CF683B005E7753 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				775FEDEB25CF683B005E7753 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		775FEDED25CF683B005E7753 /* Coplay-forked Extension */ = {
+			isa = PBXGroup;
+			children = (
+				775FEDFB25CF683B005E7753 /* Resources */,
+				775FEDEE25CF683B005E7753 /* SafariWebExtensionHandler.swift */,
+				775FEDF025CF683B005E7753 /* Info.plist */,
+				775FEDF125CF683B005E7753 /* Coplay_forked_Extension.entitlements */,
+			);
+			path = "Coplay-forked Extension";
+			sourceTree = "<group>";
+		};
+		775FEDFB25CF683B005E7753 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				775FEDFC25CF683B005E7753 /* drag.js */,
+				775FEDFD25CF683B005E7753 /* options.js */,
+				775FEDFE25CF683B005E7753 /* coplay.js */,
+				775FEDFF25CF683B005E7753 /* manifest.json */,
+				775FEE0025CF683B005E7753 /* coplay.png */,
+				775FEE0125CF683B005E7753 /* options.html */,
+				775FEE0225CF683B005E7753 /* inject.js */,
+				775FEE0325CF683B005E7753 /* peer.js */,
+				775FEE0425CF683B005E7753 /* coplay.css */,
+			);
+			name = Resources;
+			path = "Coplay-forked Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		775FEDD325CF683A005E7753 /* Coplay-forked */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775FEDF825CF683B005E7753 /* Build configuration list for PBXNativeTarget "Coplay-forked" */;
+			buildPhases = (
+				775FEDD025CF683A005E7753 /* Sources */,
+				775FEDD125CF683A005E7753 /* Frameworks */,
+				775FEDD225CF683A005E7753 /* Resources */,
+				775FEDF725CF683B005E7753 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				775FEDE925CF683B005E7753 /* PBXTargetDependency */,
+			);
+			name = "Coplay-forked";
+			productName = "Coplay-forked";
+			productReference = 775FEDD425CF683A005E7753 /* Coplay-forked.app */;
+			productType = "com.apple.product-type.application";
+		};
+		775FEDE525CF683B005E7753 /* Coplay-forked Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775FEDF425CF683B005E7753 /* Build configuration list for PBXNativeTarget "Coplay-forked Extension" */;
+			buildPhases = (
+				775FEDE225CF683B005E7753 /* Sources */,
+				775FEDE325CF683B005E7753 /* Frameworks */,
+				775FEDE425CF683B005E7753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coplay-forked Extension";
+			productName = "Coplay-forked Extension";
+			productReference = 775FEDE625CF683B005E7753 /* Coplay-forked Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		775FEDCC25CF683A005E7753 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					775FEDD325CF683A005E7753 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					775FEDE525CF683B005E7753 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 775FEDCF25CF683A005E7753 /* Build configuration list for PBXProject "Coplay-forked" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 775FEDCB25CF683A005E7753;
+			productRefGroup = 775FEDD525CF683A005E7753 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				775FEDD325CF683A005E7753 /* Coplay-forked */,
+				775FEDE525CF683B005E7753 /* Coplay-forked Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		775FEDD225CF683A005E7753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775FEDE025CF683B005E7753 /* Assets.xcassets in Resources */,
+				775FEDDC25CF683A005E7753 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775FEDE425CF683B005E7753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775FEE0825CF683B005E7753 /* manifest.json in Resources */,
+				775FEE0725CF683B005E7753 /* coplay.js in Resources */,
+				775FEE0525CF683B005E7753 /* drag.js in Resources */,
+				775FEE0B25CF683B005E7753 /* inject.js in Resources */,
+				775FEE0625CF683B005E7753 /* options.js in Resources */,
+				775FEE0925CF683B005E7753 /* coplay.png in Resources */,
+				775FEE0D25CF683B005E7753 /* coplay.css in Resources */,
+				775FEE0C25CF683B005E7753 /* peer.js in Resources */,
+				775FEE0A25CF683B005E7753 /* options.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		775FEDD025CF683A005E7753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775FEDDE25CF683A005E7753 /* ViewController.swift in Sources */,
+				775FEDD925CF683A005E7753 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		775FEDE225CF683B005E7753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775FEDEF25CF683B005E7753 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		775FEDE925CF683B005E7753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 775FEDE525CF683B005E7753 /* Coplay-forked Extension */;
+			targetProxy = 775FEDE825CF683B005E7753 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		775FEDDA25CF683A005E7753 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				775FEDDB25CF683A005E7753 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		775FEDF225CF683B005E7753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		775FEDF325CF683B005E7753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		775FEDF525CF683B005E7753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Coplay-forked Extension/Coplay_forked_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Coplay-forked Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.Coplay-forked.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		775FEDF625CF683B005E7753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Coplay-forked Extension/Coplay_forked_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Coplay-forked Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.Coplay-forked.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		775FEDF925CF683B005E7753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Coplay-forked/Coplay_forked.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Coplay-forked/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.Coplay-forked";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		775FEDFA25CF683B005E7753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Coplay-forked/Coplay_forked.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Coplay-forked/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.Coplay-forked";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		775FEDCF25CF683A005E7753 /* Build configuration list for PBXProject "Coplay-forked" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775FEDF225CF683B005E7753 /* Debug */,
+				775FEDF325CF683B005E7753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775FEDF425CF683B005E7753 /* Build configuration list for PBXNativeTarget "Coplay-forked Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775FEDF525CF683B005E7753 /* Debug */,
+				775FEDF625CF683B005E7753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775FEDF825CF683B005E7753 /* Build configuration list for PBXNativeTarget "Coplay-forked" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775FEDF925CF683B005E7753 /* Debug */,
+				775FEDFA25CF683B005E7753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 775FEDCC25CF683A005E7753 /* Project object */;
+}
